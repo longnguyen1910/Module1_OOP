@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Rectangle{
+            constructor(height,width){
+                this.height=height;
+                this.width=width;
+            }
+            getWidth(){
+                return this.width;
+            }
+            getHeight(){
+                return this.height;
+            }
+            setWidth(width){
+                this.width=width;
+            }
+            setHeight(height){
+                this.height=height;
+            }
+            getPerimeter(){
+                return (width+height)*2;
+            }
+            getArea(){
+                return width*height;
+            }
+
+        }
+
+        let rectangle = new Rectangle(10,15);
+        let width=rectangle.getWidth();
+        let height=rectangle.getHeight();
+        let perimeter = rectangle.getPerimeter();
+        let area = rectangle.getArea();
+        document.write(perimeter+"<br>"+area)
+    </script>
+</body>
+</html>
